@@ -1,0 +1,14 @@
+extends ./layouts/main.pug
+block content   
+    h2 Productos en catalogo
+    each val in products
+        ul
+            li= "Nombre--> " + val.title
+            li= "Precio--> $" + val.price
+            li= "Url--> " + val.thumbnail
+            li= "Id--> " + val.id
+
+    button 
+        a(href='http://localhost:8081') Inicio
+    button 
+        a(href='http://localhost:8081/productos/post') Cargar un producto nuevo

@@ -1,0 +1,25 @@
+extends ./layouts/main.pug
+block content   
+    h2 Agregar un Producto
+    form(action="/productos" method="POST") 
+        input(
+            type="text" 
+            name="title"
+            placeholder="Nombre"
+            ) 
+        input(
+            type="number" 
+            name="price"
+            placeholder="Precio"
+            )
+        input(
+            type="url" 
+            name="thumbnail"
+            placeholder="Url"
+            )
+        button Enviar 
+        br
+        br
+        button 
+            a(href="http://localhost:8081") Inicio
+

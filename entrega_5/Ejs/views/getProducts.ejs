@@ -1,0 +1,10 @@
+<h1>Productos en Catalogo</h1>
+
+<% products = products.map((elem) => {
+    return ('<li>' + elem.title + '</li>' + '<li>' + elem.price + '</li>' + '<li>' + elem.thumbnail + '</li>' + '<li>' + elem.id + '</li>');
+}) -%>
+<ul><%- products %></ul>
+
+<button><a style="text-decoration: none;" href="http://localhost:8082">Inicio</a></button>
+<button><a style="text-decoration: none;" href="http://localhost:8082/productos/post">Carga otro producto</a></button>
+
